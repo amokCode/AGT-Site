@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('', '');
+Route::get('', 'HomeController@index');
+Route::get('forum', 'HomeController@forum');
 
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', function () {
